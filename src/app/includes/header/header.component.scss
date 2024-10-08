@@ -1,0 +1,88 @@
+header {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+}
+.container:not(header){
+  padding: 20px 40px;
+}
+.container:where(header){
+  padding: 40px 20px 0 40px;
+}
+
+.header_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+}
+
+.user_profile {
+  display: flex;
+  align-items: center;
+}
+
+.user_profile_icon{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgb(128, 0, 32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.user_profile span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.user_profile img {
+  width: 30px;
+  border-radius: 50%;
+}
+nav{
+  width: 100%;
+  margin-top: 10px;
+  display: block;
+}
+
+nav table{
+border: 1px solid #f9f9f9;
+width: 100%;
+}
+
+nav table td:hover {
+  background-color: #f2f2f2;
+}
+
+nav table td {
+  text-align: center;
+  padding: 0px;
+  border-right: 1px solid #f9f9f9;
+}
+nav table td:first-child {
+  text-align: right;
+}
+nav table td:last-child {
+  border-right: 0px;
+}
+
+nav table td a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #232329;
+  display: block;
+  padding: 15px;
+}
+
+nav table td a:hover {
+  text-decoration: none;
+}
