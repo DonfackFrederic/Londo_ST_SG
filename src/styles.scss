@@ -16,3 +16,13 @@ body {
 .container:where(header){
   padding: 40px 20px 0 40px;
 }
+
+.horizontal_container{
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+}
+.vertical_container{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}

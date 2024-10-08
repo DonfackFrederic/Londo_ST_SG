@@ -63,7 +63,7 @@ a:hover {
 
 .offres_similaires_container{
   width: 80%;
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 .offres_similaires_container h2{
   padding: 0 10px;
@@ -71,12 +71,11 @@ a:hover {
 }
 
 .offres_similaires_container .offre {
-  box-shadow: 1px 3px 6px rgba(70, 68, 68, 0.459);
+  box-shadow: 0px 4px 8px #00000014;
   background-color: #fff;
   padding: 20px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
-  border-radius: 8px;
 }
 
 .offres-similaires .offre h3 {
