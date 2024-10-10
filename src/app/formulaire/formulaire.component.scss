@@ -1,0 +1,94 @@
+.header_banner {
+  height: 15rem;
+}
+.header_banner_container {
+  background-image: url('../../../public/img/banner_image.png');
+  height: 11.7rem;
+}
+
+.header_banner_card{
+  height: 15rem;
+  width: 20rem;
+  background-color: #E60028;
+  position: absolute;
+  margin-left: 100px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_banner_card{
+  display: flex;
+  justify-content: space-around;
+}
+.header_banner_card .vertical_line{
+  border-left: 2px solid #fff;
+  padding: 15px;
+}
+.header_banner_card .header_banner_card_text{
+  display: flex;
+  flex-direction: column;
+  font-size:xx-large;
+  color: #fff9f9;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+main form{
+  padding: 10px 5rem;
+  width: 100%;
+}
+
+main form .form_head > span{
+  color: #919191;
+  font-size: small;
+  display: block;
+}
+main form .form_head > span > span{
+  color: #000;
+  font-size: small;
+}
+main form .form_head h2{
+  padding: 8px;
+  margin: 10px 0px;
+  border-left: 2px solid var(--pramary-color);
+}
+
+main .form_body{
+  display: flex;
+  flex-direction: column;
+}
+
+main .form_body_personal_info {
+  width: 50%;
+  min-width: 256px;
+}
+main .form_body_personal_info .form_input{
+  width: 100%;
+}
+.form_body_personal_info .birth_option{
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+.form_body_personal_info .birth_option >div{
+  width: 100%;
+}
+.form_body_personal_info .birth_option label{
+ width: 100%;
+}
+
+form input[type='text'] {
+  padding: 0.5rem;
+  border: 1px solid #C7C7C7;
+  border-radius: 2px;
+  width: 100%;
+}
+form input[type='text']:focus {
+  outline: none;
+}
+form label{
+   color: #8696A6;
+   font-size: small;
+   padding: 5px 0px;
+   display: block;
+}
