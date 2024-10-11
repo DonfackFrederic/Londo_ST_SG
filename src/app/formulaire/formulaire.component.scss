@@ -33,36 +33,63 @@
   font-family:Arial, Helvetica, sans-serif;
 }
 
-main form{
-  padding: 10px 5rem;
+form{
   width: 100%;
+  .form_head{
+    padding-top: 20px;
+  }
+  .form_head > *{
+    padding: 10px 5rem;
+  }
 }
 
-main form .form_head > span{
+form .form_head > span{
   color: #919191;
   font-size: small;
   display: block;
 }
-main form .form_head > span > span{
+form .form_head > span > span{
   color: #000;
   font-size: small;
 }
-main form .form_head h2{
+form .form_head h2{
   padding: 8px;
-  margin: 10px 0px;
-  border-left: 2px solid var(--pramary-color);
+  margin:0 5rem;
+  border-left: 2px solid #E60028;
 }
 
-main .form_body{
+.form_body{
   display: flex;
   flex-direction: column;
+  padding: 10px 5rem;
+  .form_body_personal_info div{
+    padding:4px 0;
+  }
+.form_body_personal_info{
+  .form_upload_file{
+      width: 100%;
+      padding: 30px 0;
+      margin-bottom: 30px;
+      border-top: 1px solid #F2F2F2;
+      border-bottom: 1px solid #F2F2F2;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      .form_input_file_placeholder{
+        background-color: #F5F7F9;
+        border: 1px solid #E5E5E5;
+        padding: 5px 2rem;
+        cursor: pointer;
+      }
+    }
+  }
 }
 
-main .form_body_personal_info {
+.form_body_personal_info .info_text {
   width: 50%;
   min-width: 256px;
 }
-main .form_body_personal_info .form_input{
+.form_body_personal_info .form_input{
   width: 100%;
 }
 .form_body_personal_info .birth_option{
@@ -91,4 +118,96 @@ form label{
    font-size: small;
    padding: 5px 0px;
    display: block;
+}
+
+.form_body_pro_info{
+  & > span{
+    padding: 20px 0;
+    display: inline-block;
+  }
+  table{
+    tbody{
+      tr:hover{
+        background: #F5F7F9;
+        cursor: pointer;
+      }
+    }
+    tr{
+      th{
+        color: #8696A6;
+        text-transform: uppercase;
+      }
+      td, th{
+        padding: 9px;
+        text-align: left;
+      }
+      td.icons{
+        display: flex;
+        & span:first-child{
+          margin-right: 10px;
+        }
+      }
+      border: 1px solid #E5E5E5;
+    }
+    
+    border-collapse: collapse;
+    width: 100%;
+  }
+}
+
+.btn_add{
+  color: #E60028;
+  font-weight:400;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.form_body_sup_info{
+  margin: 20px 0;
+  display: flex;
+  gap: 30px;
+  &>div{
+    width: 50%;
+  }
+  .text_input{
+    display: flex;
+    flex-direction: column;
+    &>*{
+      margin:5px 0px;
+    }
+
+    textarea{
+      border: 1px solid #C7C7C7;
+      resize: none;
+      font-size:large;
+      &:focus{
+        outline: 1px solid #c7c2c2;
+      }
+    }
+  }
+  .file_input{
+    .file_input_button{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .file_uploaded{
+      margin-top: 10px;
+      padding: 10px;
+      cursor: pointer;
+      font-size: large;
+      border: 1px solid #F2F2F2;
+      .file_uploaded_item{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 2px;
+      }
+    }
+  }
+}
+
+.form_body_valid_btn{
+  box-shadow: 0 0px 5px;
+  padding: 20px;
+  text-align: center;
 }
